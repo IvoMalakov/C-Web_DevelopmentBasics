@@ -1,0 +1,24 @@
+body {
+  footer {
+    p {
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+
+  main {
+    p {
+      .bold {
+        font-weight: bold;
+      }
+
+      .italic {
+        font-style: italic;
+      }
+    }
+  }
+
+  pre {
+    background-color: #F94F80;
+  }
+}

@@ -1,0 +1,6 @@
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 2 - HTTP Protocol\HTML5_and_CSS\AddCake\bin\Debug\AddCake.exe.config
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 2 - HTTP Protocol\HTML5_and_CSS\AddCake\bin\Debug\AddCake.exe
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 2 - HTTP Protocol\HTML5_and_CSS\AddCake\bin\Debug\AddCake.pdb
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 2 - HTTP Protocol\HTML5_and_CSS\AddCake\obj\Debug\AddCake.csprojResolveAssemblyReference.cache
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 2 - HTTP Protocol\HTML5_and_CSS\AddCake\obj\Debug\AddCake.exe
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 2 - HTTP Protocol\HTML5_and_CSS\AddCake\obj\Debug\AddCake.pdb

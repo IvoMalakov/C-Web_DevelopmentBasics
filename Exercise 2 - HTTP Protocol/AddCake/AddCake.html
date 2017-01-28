@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Add Cake</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="/cgi-bin/ByTheCake.exe">Back to home</a>
+            </nav>
+        </header>
+        <br>
+
+        <main>
+            <form action="AddCake.exe" method="POST">
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" />
+
+                <label for="price">Price: </label>
+                <input type="text" id="price" name="price" />
+
+                <input type="submit" value="Add Cake" />
+            </form>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+body footer p {
+  text-align: center;
+  font-weight: bold; }
+body main p .bold {
+  font-weight: bold; }
+body main p .italic {
+  font-style: italic; }
+body pre {
+  background-color: #F94F80; }
+
+/*# sourceMappingURL=style.css.map */
