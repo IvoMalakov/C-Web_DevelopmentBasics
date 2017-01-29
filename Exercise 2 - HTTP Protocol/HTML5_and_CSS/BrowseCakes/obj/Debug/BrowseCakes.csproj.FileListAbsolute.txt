@@ -1,0 +1,6 @@
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 2 - HTTP Protocol\HTML5_and_CSS\BrowseCakes\bin\Debug\BrowseCakes.exe.config
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 2 - HTTP Protocol\HTML5_and_CSS\BrowseCakes\bin\Debug\BrowseCakes.exe
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 2 - HTTP Protocol\HTML5_and_CSS\BrowseCakes\bin\Debug\BrowseCakes.pdb
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 2 - HTTP Protocol\HTML5_and_CSS\BrowseCakes\obj\Debug\BrowseCakes.csprojResolveAssemblyReference.cache
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 2 - HTTP Protocol\HTML5_and_CSS\BrowseCakes\obj\Debug\BrowseCakes.exe
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 2 - HTTP Protocol\HTML5_and_CSS\BrowseCakes\obj\Debug\BrowseCakes.pdb

@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+}
+
+input {
+    display: block;
+}
+
+input[type="text"] {
+    background-color: aquamarine;
+}
+
+input[type="password"] {
+    background-color: #EA7D3C;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+}
+
+p {
+    font-weight: bold;
+}

@@ -1,0 +1,6 @@
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 2 - HTTP Protocol\HTML5_and_CSS\Calculator\bin\Debug\Calculator.exe.config
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 2 - HTTP Protocol\HTML5_and_CSS\Calculator\bin\Debug\Calculator.exe
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 2 - HTTP Protocol\HTML5_and_CSS\Calculator\bin\Debug\Calculator.pdb
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 2 - HTTP Protocol\HTML5_and_CSS\Calculator\obj\Debug\Calculator.csprojResolveAssemblyReference.cache
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 2 - HTTP Protocol\HTML5_and_CSS\Calculator\obj\Debug\Calculator.exe
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 2 - HTTP Protocol\HTML5_and_CSS\Calculator\obj\Debug\Calculator.pdb

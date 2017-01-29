@@ -1,0 +1,5 @@
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 2 - HTTP Protocol\HTML5_and_CSS\LoginForm\bin\Debug\LoginForm.exe.config
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 2 - HTTP Protocol\HTML5_and_CSS\LoginForm\bin\Debug\LoginForm.exe
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 2 - HTTP Protocol\HTML5_and_CSS\LoginForm\bin\Debug\LoginForm.pdb
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 2 - HTTP Protocol\HTML5_and_CSS\LoginForm\obj\Debug\LoginForm.exe
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 2 - HTTP Protocol\HTML5_and_CSS\LoginForm\obj\Debug\LoginForm.pdb

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login Form</title>
+        <link type="text/css" rel="stylesheet" href="/styles/loginForm.css" />
+    </head>
+
+    <body>
+        <header>
+            <h1>Login form</h1>
+        </header>
+
+        <main>
+            <form action="/cgi-bin/LoginForm.exe" method="POST">
+                <label for="userName">Username: </label>
+                <input type="text" id="userName" name="userName" />
+
+                <label for="password">Password: </label>
+                <input type="password" id="password" name="password" />
+
+                <input type="submit" value="Log in" />
+            </form>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        input[type="text"] {
+            background-color: aquamarine;
+        }
+
+        p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Calculator</h1>
+    </header>
+    <br>
+
+    <main>
+        <form action="/cgi-bin/Calculator.exe" method="POST">
+            <label for="FirstNumber">First Number: </label>
+            <input type="text" id="FirstNumber" name="firstNumber" />
+
+            <label for="MathematicalSign">Mathematical sign: </label>
+            <input type="text" id="MathematicalSign" name="mathematicalSign" />
+
+            <label for="SecondNumber">Second Number: </label>
+            <input type="text" id="SecondNumber" name="secondNumber" />
+
+            <input type="submit" value="Calculate" />
+        </form>
+    </main>
+</body>
+</html>
