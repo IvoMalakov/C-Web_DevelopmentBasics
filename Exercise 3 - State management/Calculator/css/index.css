@@ -1,0 +1,18 @@
+body #wrapper {
+  margin: 10px;
+  padding: 5px;
+  background-color: #EFEEED; }
+  body #wrapper .container {
+    margin: 15px; }
+    body #wrapper .container button {
+      width: 150px;
+      height: 35px;
+      margin: 5px 20px 10px 5px; }
+    body #wrapper .container input[type="text"] {
+      margin: 5px 20px 5px 5px;
+      padding: 12px;
+      width: 330px;
+      height: 40px;
+      text-align: right; }
+
+/*# sourceMappingURL=index.css.map */

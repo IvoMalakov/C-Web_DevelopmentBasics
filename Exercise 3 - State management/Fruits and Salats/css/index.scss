@@ -1,0 +1,57 @@
+body {
+  background-color: #FFFFFF;
+
+  .container {
+    padding-left: 100px;
+
+    #ramsey {
+      font-size: 60%;
+    }
+
+    #images-container {
+      width: 1000px;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+
+      img {
+        margin: 10px 55px 0 55px;
+        padding: 10px;
+        border: 1px solid #EDEDED;
+      }
+
+      .image-item {
+        text-align: center;
+      }
+    }
+
+    .bigger-font {
+      font-size: 120%;
+    }
+  }
+
+  .navbar-left {
+    width: 10%;
+
+    .navbar-brand {
+      margin-bottom: 0;
+    }
+
+    ul {
+      li:hover a {
+        background-color: #0275D8;
+      }
+    }
+
+    input[type="text"] {
+      margin-left: 15px;
+    }
+
+    button {
+      margin: 15px;
+      height: 35px;
+      width: 136px;
+      border-radius: 5px;
+    }
+  }
+}
