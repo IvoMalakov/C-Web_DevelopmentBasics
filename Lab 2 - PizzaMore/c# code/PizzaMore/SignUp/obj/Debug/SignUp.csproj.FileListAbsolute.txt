@@ -1,0 +1,5 @@
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\lab 2 - Pizza More\c# code\PizzaMore\SignUp\bin\Debug\SignUp.exe.config
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\lab 2 - Pizza More\c# code\PizzaMore\SignUp\bin\Debug\SignUp.exe
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\lab 2 - Pizza More\c# code\PizzaMore\SignUp\bin\Debug\SignUp.pdb
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\lab 2 - Pizza More\c# code\PizzaMore\SignUp\obj\Debug\SignUp.exe
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\lab 2 - Pizza More\c# code\PizzaMore\SignUp\obj\Debug\SignUp.pdb

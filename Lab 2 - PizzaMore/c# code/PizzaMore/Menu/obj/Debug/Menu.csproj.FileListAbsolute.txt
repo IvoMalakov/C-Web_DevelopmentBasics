@@ -1,0 +1,6 @@
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\lab 2 - Pizza More\c# code\PizzaMore\Menu\bin\Debug\Menu.exe.config
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\lab 2 - Pizza More\c# code\PizzaMore\Menu\bin\Debug\Menu.exe
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\lab 2 - Pizza More\c# code\PizzaMore\Menu\bin\Debug\Menu.pdb
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\lab 2 - Pizza More\c# code\PizzaMore\Menu\obj\Debug\Menu.csprojResolveAssemblyReference.cache
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\lab 2 - Pizza More\c# code\PizzaMore\Menu\obj\Debug\Menu.exe
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\lab 2 - Pizza More\c# code\PizzaMore\Menu\obj\Debug\Menu.pdb

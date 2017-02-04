@@ -1,0 +1,6 @@
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\lab 2 - Pizza More\c# code\PizzaMore\SignIn\bin\Debug\SignIn.exe.config
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\lab 2 - Pizza More\c# code\PizzaMore\SignIn\bin\Debug\SignIn.exe
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\lab 2 - Pizza More\c# code\PizzaMore\SignIn\bin\Debug\SignIn.pdb
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\lab 2 - Pizza More\c# code\PizzaMore\SignIn\obj\Debug\SignIn.exe
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\lab 2 - Pizza More\c# code\PizzaMore\SignIn\obj\Debug\SignIn.pdb
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\lab 2 - Pizza More\c# code\PizzaMore\SignIn\obj\Debug\SignIn.csprojResolveAssemblyReference.cache
