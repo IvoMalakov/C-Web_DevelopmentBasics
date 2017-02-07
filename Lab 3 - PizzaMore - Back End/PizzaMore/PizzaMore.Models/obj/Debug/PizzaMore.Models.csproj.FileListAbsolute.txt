@@ -1,0 +1,5 @@
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 3 - Pizza More - Back End\PizzaMore\PizzaMore.Models\bin\Debug\PizzaMore.Models.dll
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 3 - Pizza More - Back End\PizzaMore\PizzaMore.Models\bin\Debug\PizzaMore.Models.pdb
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 3 - Pizza More - Back End\PizzaMore\PizzaMore.Models\obj\Debug\PizzaMore.Models.csprojResolveAssemblyReference.cache
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 3 - Pizza More - Back End\PizzaMore\PizzaMore.Models\obj\Debug\PizzaMore.Models.dll
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 3 - Pizza More - Back End\PizzaMore\PizzaMore.Models\obj\Debug\PizzaMore.Models.pdb

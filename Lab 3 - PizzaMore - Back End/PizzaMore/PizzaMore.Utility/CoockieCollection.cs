@@ -1,57 +1,76 @@
-﻿namespace PizzaMore.Utility
+﻿using System.Collections;
+
+namespace PizzaMore.Utility
 {
     using System.Collections.Generic;
-    using System.Linq;
     using Interfaces;
     public class CoockieCollection : ICoockieCollection
     {
-        private readonly IDictionary<string, Cookie> cookies;
 
         public CoockieCollection()
         {
-            this.cookies = new Dictionary<string, Cookie>();
+            this.Cookies = new Dictionary<string, Cookie>();
         }
+
+        public IDictionary<string, Cookie> Cookies { get; private set; }
 
         public void AddCoockie(Cookie cookie)
         {
-            string[] cookieInfo = cookie.ToString().Split('=');
-            string name = cookieInfo[0];
-            string value = cookieInfo[1];
-
-            Cookie cookieForAdd = new Cookie()
+            if (this.Cookies.ContainsKey(cookie.Name))
             {
-                Name = name,
-                Value = value
-            };
+                this.Cookies.Add(cookie.Name, new Cookie());
+            }
 
-            this.cookies[name] = cookieForAdd;
+            this.Cookies[cookie.Name] = cookie;
         }
 
         public void RemoveCoockie(string cookieName)
         {
-            if (this.cookies.ContainsKey(cookieName))
+            if (this.Cookies.ContainsKey(cookieName))
             {
-                this.cookies[cookieName] = null;
-                this.cookies.Remove(cookieName);
+                this.Cookies.Remove(cookieName);
             }
         }
 
         public bool ContainsKey(string key)
         {
-            string[] keysArray = this.cookies.Keys.ToArray();
-
-            return keysArray.Any(keyForcheck => keyForcheck.Equals(key));
+            return this.Cookies.ContainsKey(key);
         }
 
         public int Count
         {
-            get { return this.cookies.Keys.ToArray().Length; }
+            get { return this.Cookies.Count; }
         }
 
         public Cookie this[string key]
         {
-            get { return this.cookies[key]; }
-            set { this.cookies[key] = value; }
+            get
+            {
+                return this.Cookies[key];
+            }
+
+            set
+            {
+                if (this.Cookies.ContainsKey(key))
+                {
+                    this.Cookies[key] = value;
+                }
+                else
+                {
+                    this.Cookies.Add(key, value);
+                }
+            }
+           
+        }
+
+        public IEnumerator<Cookie> GetEnumerator()
+        {
+            return this.Cookies.Values.GetEnumerator();
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return this.GetEnumerator();
         }
     }
 }

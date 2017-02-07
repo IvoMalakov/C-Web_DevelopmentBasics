@@ -1,6 +1,8 @@
 ﻿namespace PizzaMore.Utility.Interfaces
 {
-    public interface ICoockieCollection
+    using System.Collections.Generic;
+
+    public interface ICoockieCollection : IEnumerable<Cookie>
     {
         void AddCoockie(Cookie cookie);
 
