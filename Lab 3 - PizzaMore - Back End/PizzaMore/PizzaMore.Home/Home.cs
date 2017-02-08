@@ -19,6 +19,7 @@
             if (WebUtil.IsGet())
             {
                 RequestParameters = WebUtil.RetrieveGetParameters();
+                TryLogOut();
                 Language = WebUtil.GetCookies()["lang"].Value;
             }
 
@@ -30,6 +31,25 @@
             }
 
             ShowPage();
+        }
+
+        private static void TryLogOut()
+        {
+            if (RequestParameters.ContainsKey("logout"))
+            {
+                if (RequestParameters["logout"] == "true")
+                {
+                    Session = WebUtil.GetSession();
+                    PizzaMoreContext context = new PizzaMoreContext();
+
+                    using (context)
+                    {
+                        Session session = context.Sessions.Find(Session.Id);
+                        context.Sessions.Remove(session);
+                        context.SaveChanges();
+                    }
+                }
+            }
         }
 
         private static void AddDefaultLanguageCoockie()

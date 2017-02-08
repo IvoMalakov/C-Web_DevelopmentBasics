@@ -55,6 +55,7 @@
     <Compile Include="Header.cs" />
     <Compile Include="Interfaces\ICoockieCollection.cs" />
     <Compile Include="Logger.cs" />
+    <Compile Include="PasswordHasher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebUtil.cs" />
   </ItemGroup>

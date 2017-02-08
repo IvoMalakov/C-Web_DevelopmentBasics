@@ -14,7 +14,7 @@ namespace PizzaMore.Data
 
         public DbSet<User> Users { get; set; }
 
-        public DbSet<Pizza> Pizzas { get; set; }
+        public DbSet<Pizza> PizzaSuggestions { get; set; }
 
         public DbSet<Session> Sessions { get; set; }
     }

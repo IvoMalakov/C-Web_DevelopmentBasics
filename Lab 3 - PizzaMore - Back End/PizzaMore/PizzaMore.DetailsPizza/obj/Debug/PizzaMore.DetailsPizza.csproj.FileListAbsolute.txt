@@ -1,0 +1,16 @@
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 3 - Pizza More - Back End\PizzaMore\PizzaMore.DetailsPizza\bin\Debug\PizzaMore.DetailsPizza.exe.config
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 3 - Pizza More - Back End\PizzaMore\PizzaMore.DetailsPizza\bin\Debug\PizzaMore.DetailsPizza.exe
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 3 - Pizza More - Back End\PizzaMore\PizzaMore.DetailsPizza\bin\Debug\PizzaMore.DetailsPizza.pdb
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 3 - Pizza More - Back End\PizzaMore\PizzaMore.DetailsPizza\bin\Debug\EntityFramework.dll
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 3 - Pizza More - Back End\PizzaMore\PizzaMore.DetailsPizza\bin\Debug\EntityFramework.SqlServer.dll
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 3 - Pizza More - Back End\PizzaMore\PizzaMore.DetailsPizza\bin\Debug\PizzaMore.Data.dll
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 3 - Pizza More - Back End\PizzaMore\PizzaMore.DetailsPizza\bin\Debug\PizzaMore.Models.dll
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 3 - Pizza More - Back End\PizzaMore\PizzaMore.DetailsPizza\bin\Debug\PizzaMore.Utility.dll
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 3 - Pizza More - Back End\PizzaMore\PizzaMore.DetailsPizza\bin\Debug\PizzaMore.Data.pdb
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 3 - Pizza More - Back End\PizzaMore\PizzaMore.DetailsPizza\bin\Debug\PizzaMore.Models.pdb
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 3 - Pizza More - Back End\PizzaMore\PizzaMore.DetailsPizza\bin\Debug\PizzaMore.Utility.pdb
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 3 - Pizza More - Back End\PizzaMore\PizzaMore.DetailsPizza\bin\Debug\EntityFramework.xml
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 3 - Pizza More - Back End\PizzaMore\PizzaMore.DetailsPizza\bin\Debug\EntityFramework.SqlServer.xml
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 3 - Pizza More - Back End\PizzaMore\PizzaMore.DetailsPizza\obj\Debug\PizzaMore.DetailsPizza.exe
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 3 - Pizza More - Back End\PizzaMore\PizzaMore.DetailsPizza\obj\Debug\PizzaMore.DetailsPizza.pdb
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 3 - Pizza More - Back End\PizzaMore\PizzaMore.DetailsPizza\obj\Debug\PizzaMore.DetailsPizza.csprojResolveAssemblyReference.cache
