@@ -1,0 +1,5 @@
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 4 - Hand Make Server\HandMakeServer\SimpleHttpServer\bin\Debug\SimpleHttpServer.dll
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 4 - Hand Make Server\HandMakeServer\SimpleHttpServer\bin\Debug\SimpleHttpServer.pdb
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 4 - Hand Make Server\HandMakeServer\SimpleHttpServer\obj\Debug\SimpleHttpServer.csprojResolveAssemblyReference.cache
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 4 - Hand Make Server\HandMakeServer\SimpleHttpServer\obj\Debug\SimpleHttpServer.dll
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 4 - Hand Make Server\HandMakeServer\SimpleHttpServer\obj\Debug\SimpleHttpServer.pdb
