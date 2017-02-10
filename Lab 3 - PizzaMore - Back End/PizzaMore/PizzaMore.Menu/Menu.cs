@@ -29,12 +29,12 @@
                     VoteForPizza();
                     ShowPage();
                 }
+            }
 
-                else
-                {
-                    Header.Print();
-                    WebUtil.PageNotAllowed();
-                }
+            else
+            {
+                Header.Print();
+                WebUtil.PageNotAllowed();
             }
         }
 

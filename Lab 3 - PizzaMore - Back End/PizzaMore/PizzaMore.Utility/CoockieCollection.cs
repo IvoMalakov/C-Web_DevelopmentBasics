@@ -16,7 +16,7 @@ namespace PizzaMore.Utility
 
         public void AddCoockie(Cookie cookie)
         {
-            if (this.Cookies.ContainsKey(cookie.Name))
+            if (!this.Cookies.ContainsKey(cookie.Name))
             {
                 this.Cookies.Add(cookie.Name, new Cookie());
             }

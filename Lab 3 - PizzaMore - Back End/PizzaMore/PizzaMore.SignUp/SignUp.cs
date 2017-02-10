@@ -1,5 +1,6 @@
 ﻿namespace PizzaMore.SignUp
 {
+    using System;
     using System.Collections.Generic;
     using Utility;
     using Models;
@@ -37,6 +38,8 @@
                 context.Users.Add(user);
                 context.SaveChanges();
             }
+
+            Console.WriteLine("Location: home.exe\n\n");
         }
 
         private static void ShowPage()

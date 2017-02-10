@@ -8,7 +8,7 @@
     {
         public Header()
         {
-            this.Type = "Content-type: text/html";
+            this.Type = "Content-Type: text/html\n\n";
             this.Cookies = new CoockieCollection();
         }
 

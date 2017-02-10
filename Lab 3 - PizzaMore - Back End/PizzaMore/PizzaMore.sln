@@ -23,8 +23,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaMore.YourSuggestions",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaMore.DetailsPizza", "PizzaMore.DetailsPizza\PizzaMore.DetailsPizza.csproj", "{AA2712C7-5540-4E5F-B308-7183F73BFAF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBaseCreation", "DataBaseCreation\DataBaseCreation.csproj", "{2C0A2330-F819-436B-84C6-78711813A50A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,10 +69,6 @@ Global
 		{AA2712C7-5540-4E5F-B308-7183F73BFAF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA2712C7-5540-4E5F-B308-7183F73BFAF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA2712C7-5540-4E5F-B308-7183F73BFAF3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2C0A2330-F819-436B-84C6-78711813A50A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2C0A2330-F819-436B-84C6-78711813A50A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2C0A2330-F819-436B-84C6-78711813A50A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2C0A2330-F819-436B-84C6-78711813A50A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

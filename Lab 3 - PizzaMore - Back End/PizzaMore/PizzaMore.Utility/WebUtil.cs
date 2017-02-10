@@ -90,18 +90,13 @@
             }
 
             var cookies = new CoockieCollection();
-            string[] coockieSaves = cookieString.Split(new char[] {';'}, StringSplitOptions.RemoveEmptyEntries);
+            string[] coockieSaves = cookieString.Split(';').Select(x => x.Trim()).ToArray();
 
             foreach (string coockieSave in coockieSaves)
             {
-                string[] coockiePair = coockieSave.Split(new char[] {'='}, StringSplitOptions.RemoveEmptyEntries);
+                string[] coockiePair = coockieSave.Split('=').Select(x => x.Trim()).ToArray();
                 string coockieName = coockiePair[0];
-                string coockieValue = null;
-
-                if (coockiePair.Length > 1)
-                {
-                    coockieValue = coockiePair[1];
-                }
+                string coockieValue = coockiePair[1];
 
                 Cookie cookie = new Cookie(coockieName, coockieValue);
                 cookies.AddCoockie(cookie);

@@ -51,6 +51,8 @@
                     context.SaveChanges();
                 }
             }
+
+            Console.WriteLine("Location: menu.exe\n\n");
         }
 
         private static void ShowPage()
