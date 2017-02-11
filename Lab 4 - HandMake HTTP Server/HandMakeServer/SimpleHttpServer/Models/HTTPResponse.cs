@@ -6,77 +6,34 @@
 
     public class HTTPResponse
     {
-        private int statusCode;
-        private ResponseStatusCode statusMessage;
-        private string contentAsUtf8;
-        private byte[] content;
-
-        public HTTPResponse(ResponseStatusCode statusMessage)
+        public HTTPResponse(ResponseStatusCode statusCode)
         {
-            this.StatusMessage = statusMessage;
+            this.StatusCode = statusCode;
             this.Header = new Header(HeaderType.HttpResponse);
-            this.ContentAsUtf8 = contentAsUtf8;
+            this.Content = new byte[10];
         }
 
-        public int StatusCode
-        {
-            get
-            {
-                return this.statusCode;
-            }
-        }
-
-        public ResponseStatusCode StatusMessage
-        {
-            get
-            {
-                return this.statusMessage;
-            }
-
-            set
-            {
-                this.statusCode = Convert.ToInt32(value);
-                this.statusMessage = value;
-            }
-        }
+        public ResponseStatusCode StatusCode { get; set; }
 
         public Header Header { get; set; }
 
+        public byte[] Content { get; set; }
+
         public string ContentAsUtf8
         {
-            get
-            {
-                return this.contentAsUtf8;
-            }
-
             set
             {
-                this.content = new byte[value.Length];
-
-                if (this.content.Length != 0)
-                {
-                    this.content = UTF8Encoding.UTF8.GetBytes(value);
-                }
-
-                this.contentAsUtf8 = value;
+                this.Content = Encoding.UTF8.GetBytes(value);
             }
         }
 
-        public byte[] Content
-        {
-            get
-            {
-                return this.content;
-            }
-        }
 
         public override string ToString()
         {
             StringBuilder response = new StringBuilder();
-            string replacedMessage = this.StatusMessage.ToString().Replace('_', ' ');
+            string statusCodeWIthSpaces = this.StatusCode.ToString().Replace(" ", " ");
 
-            response.Append("HTTP/1.0 ");
-            response.Append($"{this.StatusCode} {replacedMessage}{Environment.NewLine}");
+            response.AppendLine($"HTTP/1.0 {(int) this.StatusCode} {statusCodeWIthSpaces}");
             response.AppendLine(this.Header.ToString());
 
             return response.ToString();

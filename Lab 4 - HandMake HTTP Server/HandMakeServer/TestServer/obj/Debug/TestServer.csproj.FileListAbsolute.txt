@@ -1,0 +1,8 @@
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 4 - Hand Make Server\HandMakeServer\TestServer\bin\Debug\TestServer.exe.config
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 4 - Hand Make Server\HandMakeServer\TestServer\bin\Debug\TestServer.exe
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 4 - Hand Make Server\HandMakeServer\TestServer\bin\Debug\TestServer.pdb
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 4 - Hand Make Server\HandMakeServer\TestServer\bin\Debug\SimpleHttpServer.dll
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 4 - Hand Make Server\HandMakeServer\TestServer\bin\Debug\SimpleHttpServer.pdb
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 4 - Hand Make Server\HandMakeServer\TestServer\obj\Debug\TestServer.csprojResolveAssemblyReference.cache
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 4 - Hand Make Server\HandMakeServer\TestServer\obj\Debug\TestServer.exe
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 4 - Hand Make Server\HandMakeServer\TestServer\obj\Debug\TestServer.pdb

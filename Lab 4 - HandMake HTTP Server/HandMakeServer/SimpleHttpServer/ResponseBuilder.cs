@@ -8,7 +8,7 @@ namespace SimpleHttpServer
     {
         public static HTTPResponse InternalServerError()
         {
-            string content = File.ReadAllText("../../resources/pages/505.html");
+            string content = File.ReadAllText("../../../simplehttpserver/resources/pages/505.html");
             HTTPResponse response = new HTTPResponse(ResponseStatusCode.Internal_Server_Error);
             response.ContentAsUtf8 = content;
 
@@ -17,7 +17,7 @@ namespace SimpleHttpServer
 
         public static HTTPResponse NotFound()
         {
-            string content = File.ReadAllText("../../resources/pages/404.html");
+            string content = File.ReadAllText("../../../simplehttpserver/resources/pages/404.html");
             HTTPResponse response = new HTTPResponse(ResponseStatusCode.Not_Found);
             response.ContentAsUtf8 = content;
 
