@@ -33,7 +33,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -48,8 +57,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SharpStore.Data\SharpStore.Data.csproj">
+      <Project>{d8c30ab0-b6b3-43ac-baa5-0b90d710621c}</Project>
+      <Name>SharpStore.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SharpStore.Models\SharpStore.Models.csproj">
+      <Project>{b90c38d9-bedb-40a3-a2c8-2bac39922a2b}</Project>
+      <Name>SharpStore.Models</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SimpleHttpServer\SimpleHttpServer.csproj">
       <Project>{9e139539-c272-488a-bfcf-caddf458df9d}</Project>
       <Name>SimpleHttpServer</Name>

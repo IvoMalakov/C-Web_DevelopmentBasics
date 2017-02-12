@@ -1,7 +1,12 @@
 ﻿using SimpleHttpServer.Models;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using System.Net;
 using SimpleHttpServer;
+using SharpStore.Data;
+using SharpStore.Models;
+using SimpleHttpServer.Enums;
 
 namespace SharpStore
 {
@@ -9,6 +14,8 @@ namespace SharpStore
     {
         static void Main(string[] args)
         {
+            SharpStoreContext context = new SharpStoreContext();
+
             var routes = new List<Route>()
             {
                 new Route()
@@ -46,10 +53,12 @@ namespace SharpStore
                     UrlRegex = "^/products$",
                     Callable = (request) =>
                     {
+                        var knives = context.Knives.ToList();
+                        string porductsFinal = GenerateKnives(knives);
                         return new HttpResponse()
                         {
                             StatusCode = SimpleHttpServer.Enums.ResponseStatusCode.Ok,
-                            ContentAsUTF8 = File.ReadAllText("../../content/products.html")
+                            ContentAsUTF8 = porductsFinal
                         };
                     }
                 },
@@ -60,6 +69,22 @@ namespace SharpStore
                     UrlRegex = "^/contacts$",
                     Callable = (request) =>
                     {
+                        return new HttpResponse()
+                        {
+                            StatusCode = SimpleHttpServer.Enums.ResponseStatusCode.Ok,
+                            ContentAsUTF8 = File.ReadAllText("../../content/contacts.html")
+                        };
+                    }
+                },
+                new Route()
+                {
+                    Name = "Contact Directory",
+                    Method = SimpleHttpServer.Enums.RequestMethod.POST,
+                    UrlRegex = "^/contacts$",
+                    Callable = (request) =>
+                    {
+                        UpploadMessageToDB(request, context);
+
                         return new HttpResponse()
                         {
                             StatusCode = SimpleHttpServer.Enums.ResponseStatusCode.Ok,
@@ -138,6 +163,68 @@ namespace SharpStore
 
             SimpleHttpServer.HttpServer httpServer = new HttpServer(8081, routes);
             httpServer.Listen();
+        }
+
+        private static void UpploadMessageToDB(HttpRequest request, SharpStoreContext context)
+        {
+            string requestContent = WebUtility.UrlDecode(request.Content);
+            string[] parameters = requestContent.Split('&');
+            IDictionary<string, string> nameValuePairs = new Dictionary<string, string>();
+
+            foreach (var parameter in parameters)
+            {
+                string[] parameterInfo = parameter.Split('=');
+                nameValuePairs.Add(parameterInfo[0], parameterInfo[1]);
+            }
+
+            Message message = new Message()
+            {
+                Sender = nameValuePairs["email"],
+                Subject = nameValuePairs["subject"],
+                MessageText = nameValuePairs["message"]
+            };
+
+            context.Messages.Add(message);
+            context.SaveChanges();
+        }
+
+        private static string GenerateKnives(List<Knife> knives)
+        {
+            int counter = 0;
+            string productsMiddle = "";
+
+            foreach (var knife in knives)
+            {
+                if (counter % 3 == 0)
+                {
+                    productsMiddle += "<section class=\"container\">" + 
+                        "<div class=\"row\" margin-top=\"10px\">";
+                }
+
+                productsMiddle +=
+                    "<div class=\"img-thumbnail\" style=\"margin:10px; padding=10px\">\r\n" +
+                    $"<img src=\"{knife.ImageUrl}\" alt=\"Card image cap\" width=\"300\" height=\"150\">\r\n" +
+                    "<div class=\"card-block\">\r\n " +
+                    $"<h3 class=\"card-title\">{knife.Name}</h3>\r\n" +
+                    $"<p class=\"card-text\">{knife.Price}$</p>\r\n" +
+                    "<button class=\"btn btn-primary\" style=\"margin-bottom: 10px\" type=\"submit\">Buy now</button>\r\n" +
+                    "</div>\r\n" +
+                    "</div>";
+
+                if (counter % 3 == 2)
+                {
+                    productsMiddle += "</div>" +
+                                      "</section>";
+                }
+
+                counter++;
+            }
+
+            string productsFinal = File.ReadAllText("../../content/products-top.html");
+            productsFinal += productsMiddle;
+            productsFinal += File.ReadAllText("../../content/products-bottom.html");
+
+            return productsFinal;
         }
     }
 }

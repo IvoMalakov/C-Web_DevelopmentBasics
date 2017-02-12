@@ -1,0 +1,12 @@
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\SharpStore\SharpStore.Data\bin\Debug\SharpStore.Data.dll.config
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\SharpStore\SharpStore.Data\bin\Debug\SharpStore.Data.dll
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\SharpStore\SharpStore.Data\bin\Debug\SharpStore.Data.pdb
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\SharpStore\SharpStore.Data\bin\Debug\EntityFramework.dll
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\SharpStore\SharpStore.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\SharpStore\SharpStore.Data\bin\Debug\SharpStore.Models.dll
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\SharpStore\SharpStore.Data\bin\Debug\SharpStore.Models.pdb
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\SharpStore\SharpStore.Data\bin\Debug\EntityFramework.xml
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\SharpStore\SharpStore.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\SharpStore\SharpStore.Data\obj\Debug\SharpStore.Data.csprojResolveAssemblyReference.cache
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\SharpStore\SharpStore.Data\obj\Debug\SharpStore.Data.dll
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\SharpStore\SharpStore.Data\obj\Debug\SharpStore.Data.pdb

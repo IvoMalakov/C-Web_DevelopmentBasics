@@ -1,0 +1,5 @@
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\SharpStore\SharpStore.Models\bin\Debug\SharpStore.Models.dll
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\SharpStore\SharpStore.Models\bin\Debug\SharpStore.Models.pdb
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\SharpStore\SharpStore.Models\obj\Debug\SharpStore.Models.csprojResolveAssemblyReference.cache
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\SharpStore\SharpStore.Models\obj\Debug\SharpStore.Models.dll
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\SharpStore\SharpStore.Models\obj\Debug\SharpStore.Models.pdb

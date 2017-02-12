@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleHttpServer", "SimpleHttpServer\SimpleHttpServer.csproj", "{9E139539-C272-488A-BFCF-CADDF458DF9D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpStore", "SharpStore\SharpStore.csproj", "{2AE5492C-ECFE-4CB0-95BB-FEA0FAAABB17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpStore.Models", "SharpStore.Models\SharpStore.Models.csproj", "{B90C38D9-BEDB-40A3-A2C8-2BAC39922A2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpStore.Data", "SharpStore.Data\SharpStore.Data.csproj", "{D8C30AB0-B6B3-43AC-BAA5-0B90D710621C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +24,14 @@ Global
 		{2AE5492C-ECFE-4CB0-95BB-FEA0FAAABB17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AE5492C-ECFE-4CB0-95BB-FEA0FAAABB17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AE5492C-ECFE-4CB0-95BB-FEA0FAAABB17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B90C38D9-BEDB-40A3-A2C8-2BAC39922A2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B90C38D9-BEDB-40A3-A2C8-2BAC39922A2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B90C38D9-BEDB-40A3-A2C8-2BAC39922A2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B90C38D9-BEDB-40A3-A2C8-2BAC39922A2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8C30AB0-B6B3-43AC-BAA5-0B90D710621C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8C30AB0-B6B3-43AC-BAA5-0B90D710621C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8C30AB0-B6B3-43AC-BAA5-0B90D710621C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8C30AB0-B6B3-43AC-BAA5-0B90D710621C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
