@@ -1,0 +1,10 @@
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\SharpStore-Skeleton\SharpStore\bin\Debug\SharpStore.exe.config
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\SharpStore-Skeleton\SharpStore\bin\Debug\Resources\Pages\404.html
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\SharpStore-Skeleton\SharpStore\bin\Debug\Resources\Pages\500.html
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\SharpStore-Skeleton\SharpStore\bin\Debug\SharpStore.exe
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\SharpStore-Skeleton\SharpStore\bin\Debug\SharpStore.pdb
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\SharpStore-Skeleton\SharpStore\bin\Debug\SimpleHttpServer.dll
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\SharpStore-Skeleton\SharpStore\bin\Debug\SimpleHttpServer.pdb
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\SharpStore-Skeleton\SharpStore\obj\Debug\SharpStore.csprojResolveAssemblyReference.cache
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\SharpStore-Skeleton\SharpStore\obj\Debug\SharpStore.exe
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\SharpStore-Skeleton\SharpStore\obj\Debug\SharpStore.pdb
