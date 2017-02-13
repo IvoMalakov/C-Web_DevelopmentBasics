@@ -46,7 +46,7 @@ namespace SharpStore
                         };
                     }
                 },
-                new Route()
+                 new Route()
                 {
                     Name = "Product Directory",
                     Method = SimpleHttpServer.Enums.RequestMethod.GET,
@@ -54,6 +54,23 @@ namespace SharpStore
                     Callable = (request) =>
                     {
                         var knives = context.Knives.ToList();
+                        string porductsFinal = GenerateKnives(knives);
+                        return new HttpResponse()
+                        {
+                            StatusCode = SimpleHttpServer.Enums.ResponseStatusCode.Ok,
+                            ContentAsUTF8 = porductsFinal
+                        };
+                    }
+                },
+                new Route()
+                {
+                    Name = "Product Directory",
+                    Method = SimpleHttpServer.Enums.RequestMethod.POST,
+                    UrlRegex = "^/products$",
+                    Callable = (request) =>
+                    {
+                        string searchFilter = request.Content.Split('=')[1];
+                        var knives = context.Knives.Where(k => k.Name.Contains(searchFilter)).ToList();
                         string porductsFinal = GenerateKnives(knives);
                         return new HttpResponse()
                         {
