@@ -14,6 +14,7 @@
 
         <!-- Bootstrap core CSS -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href=../../content/css/navbar-{0}.css">
 
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -27,7 +28,7 @@
     <div class="navbar-wrapper">
       <div class="container">
 
-        <nav class="navbar navbar-inverse navbar-static-top">
+          <nav id="navbarTop" class="navbar navbar-inverse navbar-static-top">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -46,8 +47,8 @@
 				<li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Theme <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Dark</a></li>
-                    <li><a href="#">Light</a></li>
+                      <li><a href="?theme=dark">Dark</a></li>
+                      <li><a href="?theme=light">Light</a></li>
                   </ul>
                 </li>
               </ul>

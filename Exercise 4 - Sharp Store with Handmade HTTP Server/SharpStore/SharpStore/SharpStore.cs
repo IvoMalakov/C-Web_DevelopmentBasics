@@ -7,6 +7,7 @@ using SimpleHttpServer;
 using SharpStore.Data;
 using SharpStore.Models;
 using SimpleHttpServer.Enums;
+using Cookie = SimpleHttpServer.Models.Cookie;
 
 namespace SharpStore
 {
@@ -20,15 +21,55 @@ namespace SharpStore
             {
                 new Route()
                 {
+                    Name = "Change Theme",
+                    Method = SimpleHttpServer.Enums.RequestMethod.GET,
+                    UrlRegex = "^/.+?\\?theme=.+$",
+                    Callable = (request) =>
+                    {
+                        var indexOfQuestion = request.Url.IndexOf('?');
+                        var htmlName = request.Url.Substring(1, indexOfQuestion - 1);
+                        var lastIndexOfEquals = request.Url.LastIndexOf('=');
+                        var theme = request.Url.Substring(lastIndexOfEquals + 1);
+                        var response = new HttpResponse()
+                        {
+                            StatusCode = SimpleHttpServer.Enums.ResponseStatusCode.Ok,
+                            ContentAsUTF8 = File.ReadAllText($"../../content/{htmlName}.html")
+                        };
+                        response.Header.Cookies.Add(new Cookie("theme", theme));
+
+                        return response;
+                    }
+                },
+                   new Route()
+                {
+                    Name = "Theme CSS",
+                    Method = SimpleHttpServer.Enums.RequestMethod.GET,
+                    UrlRegex = @"^/content/css/navbar-.+",
+                    Callable = (request) =>
+                    {
+                        var theme = GetTheme(request);
+                        var response = new HttpResponse()
+                        {
+                           StatusCode = SimpleHttpServer.Enums.ResponseStatusCode.Ok,
+                           ContentAsUTF8 = File.ReadAllText($"../../content/css/navbar-{theme}.css")
+                        };
+                        response.Header.ContentType = "text/css";
+
+                        return response;
+                    }
+                },
+                new Route()
+                {
                     Name = "Home Directory",
                     Method = SimpleHttpServer.Enums.RequestMethod.GET,
                     UrlRegex = "^/home$",
                     Callable = (request) =>
                     {
+                        string theme = GetTheme(request);
                         return new HttpResponse()
                         {
                             StatusCode = SimpleHttpServer.Enums.ResponseStatusCode.Ok,
-                            ContentAsUTF8 = File.ReadAllText("../../content/home.html")
+                            ContentAsUTF8 = File.ReadAllText("../../content/home.html").Replace("{0}", theme)
                         };
                     }
                 },
@@ -39,10 +80,11 @@ namespace SharpStore
                     UrlRegex = "^/about$",
                     Callable = (request) =>
                     {
+                        string theme = GetTheme(request);
                         return new HttpResponse()
                         {
                             StatusCode = SimpleHttpServer.Enums.ResponseStatusCode.Ok,
-                            ContentAsUTF8 = File.ReadAllText("../../content/about.html")
+                            ContentAsUTF8 = File.ReadAllText("../../content/about.html").Replace("{0}", theme)
                         };
                     }
                 },
@@ -53,12 +95,13 @@ namespace SharpStore
                     UrlRegex = "^/products$",
                     Callable = (request) =>
                     {
+                        string theme = GetTheme(request);
                         var knives = context.Knives.ToList();
                         string porductsFinal = GenerateKnives(knives);
                         return new HttpResponse()
                         {
                             StatusCode = SimpleHttpServer.Enums.ResponseStatusCode.Ok,
-                            ContentAsUTF8 = porductsFinal
+                            ContentAsUTF8 = porductsFinal.Replace("{0}", theme)
                         };
                     }
                 },
@@ -69,13 +112,14 @@ namespace SharpStore
                     UrlRegex = "^/products$",
                     Callable = (request) =>
                     {
+                        string theme = GetTheme(request);
                         string searchFilter = request.Content.Split('=')[1];
                         var knives = context.Knives.Where(k => k.Name.Contains(searchFilter)).ToList();
                         string porductsFinal = GenerateKnives(knives);
                         return new HttpResponse()
                         {
                             StatusCode = SimpleHttpServer.Enums.ResponseStatusCode.Ok,
-                            ContentAsUTF8 = porductsFinal
+                            ContentAsUTF8 = porductsFinal.Replace("{0}", theme)
                         };
                     }
                 },
@@ -86,10 +130,11 @@ namespace SharpStore
                     UrlRegex = "^/contacts$",
                     Callable = (request) =>
                     {
+                        string theme = GetTheme(request);
                         return new HttpResponse()
                         {
                             StatusCode = SimpleHttpServer.Enums.ResponseStatusCode.Ok,
-                            ContentAsUTF8 = File.ReadAllText("../../content/contacts.html")
+                            ContentAsUTF8 = File.ReadAllText("../../content/contacts.html").Replace("{0}", theme)
                         };
                     }
                 },
@@ -180,6 +225,17 @@ namespace SharpStore
 
             SimpleHttpServer.HttpServer httpServer = new HttpServer(8081, routes);
             httpServer.Listen();
+        }
+
+        private static string GetTheme(HttpRequest request)
+        {
+            if (!request.Header.Cookies.Contains("theme"))
+            {
+                request.Header.Cookies.Add(new Cookie("theme", "dark"));
+            }
+
+            string theme = request.Header.Cookies["theme"].Value;
+            return theme;
         }
 
         private static void UpploadMessageToDB(HttpRequest request, SharpStoreContext context)
