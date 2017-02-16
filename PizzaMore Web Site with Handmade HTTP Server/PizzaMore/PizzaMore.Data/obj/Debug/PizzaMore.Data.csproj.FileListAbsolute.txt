@@ -1,0 +1,10 @@
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\PizzaMore\PizzaMore.Data\bin\Debug\PizzaMore.Data.dll.config
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\PizzaMore\PizzaMore.Data\bin\Debug\PizzaMore.Data.dll
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\PizzaMore\PizzaMore.Data\bin\Debug\PizzaMore.Data.pdb
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\PizzaMore\PizzaMore.Data\bin\Debug\EntityFramework.dll
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\PizzaMore\PizzaMore.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\PizzaMore\PizzaMore.Data\bin\Debug\EntityFramework.xml
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\PizzaMore\PizzaMore.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\PizzaMore\PizzaMore.Data\obj\Debug\PizzaMore.Data.csprojResolveAssemblyReference.cache
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\PizzaMore\PizzaMore.Data\obj\Debug\PizzaMore.Data.dll
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 4 - C# Store\PizzaMore\PizzaMore.Data\obj\Debug\PizzaMore.Data.pdb
