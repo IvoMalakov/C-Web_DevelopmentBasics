@@ -255,7 +255,7 @@ namespace PizzaMore
                     }
                 },
 
-                 new Route()
+                new Route()
                 {
                     Name = "Yoursuggestions Directory",
                     Method = SimpleHttpServer.Enums.RequestMethod.GET,
@@ -274,6 +274,39 @@ namespace PizzaMore
                         }
                         else
                         {
+                            string suggestions = GetListOfSuggestedItems(request, context);
+
+                            return new HttpResponse()
+                            {
+                                StatusCode = SimpleHttpServer.Enums.ResponseStatusCode.Ok,
+                                ContentAsUTF8 = File.ReadAllText("../../content/yoursuggestions-top.html") +
+                                                suggestions +
+                                                File.ReadAllText("../../content/yoursuggestions-bottom.html")
+                            };
+                        }
+                    }
+                },
+
+                 new Route()
+                {
+                    Name = "Yoursuggestions Directory",
+                    Method = SimpleHttpServer.Enums.RequestMethod.POST,
+                    UrlRegex = "^/yoursuggestions$",
+                    Callable = (request) =>
+                    {
+                        bool haveSession = CheckSession(request, context);
+
+                        if (!haveSession)
+                        {
+                            return new HttpResponse()
+                            {
+                                StatusCode = SimpleHttpServer.Enums.ResponseStatusCode.Forbidden,
+                                ContentAsUTF8 = File.ReadAllText("../../content/403.html")
+                            };
+                        }
+                        else
+                        {
+                            DeleteASuggestedItem(request, context);
                             string suggestions = GetListOfSuggestedItems(request, context);
 
                             return new HttpResponse()
@@ -456,6 +489,17 @@ namespace PizzaMore
 
             HttpServer server = new HttpServer(9091, routes);
             server.Listen();
+        }
+
+        private static void DeleteASuggestedItem(HttpRequest request, PizzaMoreContext context)
+        {
+            string decodeString = WebUtility.UrlDecode(request.Content);
+            string[] pizzaForDeleteParams = decodeString.Split('=');
+            int pizzaId = int.Parse(pizzaForDeleteParams[1]);
+
+            Pizza pizzaForDeletion = context.Pizzas.Find(pizzaId);
+            context.Pizzas.Remove(pizzaForDeletion);
+            context.SaveChanges();
         }
 
         private static void LogoutUser(HttpRequest request, PizzaMoreContext context)
