@@ -39,6 +39,11 @@ namespace SimpleHttpServer.Models
             this.Cookies[cookie.Name] = cookie;
         }
 
+        public void Remove(string coockieName)
+        {
+            this.Cookies.Remove(coockieName);
+        }
+
         public IEnumerator<Cookie> GetEnumerator()
         {
             return this.Cookies.Values.GetEnumerator();
