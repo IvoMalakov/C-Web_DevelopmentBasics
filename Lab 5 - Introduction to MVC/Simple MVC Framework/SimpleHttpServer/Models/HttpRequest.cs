@@ -10,6 +10,8 @@
 
         public Header Header { get; set; }
 
+        public HttpSession Session { get; set; }
+
         public HttpRequest()
         {
             this.Header = new Header(HeaderType.HttpRequest);

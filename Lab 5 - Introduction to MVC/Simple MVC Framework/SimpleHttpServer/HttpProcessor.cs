@@ -16,10 +16,12 @@ namespace SimpleHttpServer
         private IList<Route> Routes;
         private HttpRequest Request;
         private HttpResponse Response;
+        private IDictionary<string, HttpSession> sessions;
 
-        public HttpProcessor(IEnumerable<Route> routes)
+        public HttpProcessor(IEnumerable<Route> routes, IDictionary<string, HttpSession> sessions)
         {
             this.Routes = new List<Route>(routes);
+            this.sessions = new Dictionary<string, HttpSession>(sessions);
         }
 
         public void HandleClient(TcpClient tcpClient)
@@ -124,6 +126,18 @@ namespace SimpleHttpServer
                 Header = header,
                 Content = content
             };
+
+            if (request.Header.Cookies.Contains("sessionId"))
+            {
+                var sessionId = request.Header.Cookies["sessionId"].Value;
+                request.Session = new HttpSession(sessionId);
+
+                if (!this.sessions.ContainsKey(sessionId))
+                {
+                    this.sessions.Add(sessionId, request.Session);
+                }
+            }
+
             Console.WriteLine("-REQUEST-----------------------------");
             Console.WriteLine(request);
             Console.WriteLine("------------------------------");
@@ -147,10 +161,24 @@ namespace SimpleHttpServer
                     StatusCode = ResponseStatusCode.MethodNotAllowed
                 };
 
+            if (this.Request.Session == null)
+            {
+                var session = SessionCreator.Create();
+                this.Request.Session = session;
+            }
+
+            var response = route.Callable(Request);
+
+            if (!Request.Header.Cookies.Contains("sessionId"))
+            {
+                var sessionCoockie = new Cookie("sessionId", this.Request.Session.Id + "; HttpOnly; path=/");
+                response.Header.AddCookie(sessionCoockie);
+            }
+
             // trigger the route handler...
             try
             {
-                return route.Callable(Request);
+                return response;
             }
             catch (Exception ex)
             {

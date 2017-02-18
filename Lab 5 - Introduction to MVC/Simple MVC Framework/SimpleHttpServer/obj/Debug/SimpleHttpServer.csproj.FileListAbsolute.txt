@@ -6,3 +6,11 @@ D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 5 - Introduct
 D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 5 - Introduction to MVC\MVC-Skeleton\SimpleHttpServer\obj\Debug\SimpleHttpServer.csprojResolveAssemblyReference.cache
 D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 5 - Introduction to MVC\MVC-Skeleton\SimpleHttpServer\obj\Debug\SimpleHttpServer.dll
 D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 5 - Introduction to MVC\MVC-Skeleton\SimpleHttpServer\obj\Debug\SimpleHttpServer.pdb
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 5 - Introduction to MVC\Simple MVC Framework\SimpleHttpServer\bin\Debug\Resources\Pages\404.html
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 5 - Introduction to MVC\Simple MVC Framework\SimpleHttpServer\bin\Debug\Resources\Pages\500.html
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 5 - Introduction to MVC\Simple MVC Framework\SimpleHttpServer\bin\Debug\SimpleHttpServer.dll.config
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 5 - Introduction to MVC\Simple MVC Framework\SimpleHttpServer\bin\Debug\SimpleHttpServer.dll
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 5 - Introduction to MVC\Simple MVC Framework\SimpleHttpServer\bin\Debug\SimpleHttpServer.pdb
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 5 - Introduction to MVC\Simple MVC Framework\SimpleHttpServer\obj\Debug\SimpleHttpServer.csprojResolveAssemblyReference.cache
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 5 - Introduction to MVC\Simple MVC Framework\SimpleHttpServer\obj\Debug\SimpleHttpServer.dll
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Lab 5 - Introduction to MVC\Simple MVC Framework\SimpleHttpServer\obj\Debug\SimpleHttpServer.pdb

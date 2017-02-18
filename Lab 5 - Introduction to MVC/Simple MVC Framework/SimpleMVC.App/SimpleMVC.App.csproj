@@ -56,19 +56,23 @@
   <ItemGroup>
     <Compile Include="AppStart.cs" />
     <Compile Include="BindingModels\AddNoteBindingModel.cs" />
+    <Compile Include="BindingModels\LoginUserBindingModel.cs" />
     <Compile Include="BindingModels\RegisterUserBindingModel.cs" />
     <Compile Include="Controllers\Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
+    <Compile Include="Data\Models\Login.cs" />
     <Compile Include="Data\Models\Note.cs" />
     <Compile Include="Data\Models\User.cs" />
     <Compile Include="Data\NotesAppContext.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MVC\Attributes\Methods\HttpGetAttribute.cs" />
     <Compile Include="MVC\Attributes\Methods\HttpMethodAttribute.cs" />
     <Compile Include="MVC\Attributes\Methods\HttpPostAttribute.cs" />
     <Compile Include="MVC\Interfaces\Generic\IActionResult.cs" />
     <Compile Include="MVC\Interfaces\Generic\IRenderable.cs" />
     <Compile Include="MVC\Interfaces\IActionResult.cs" />
+    <Compile Include="MVC\Interfaces\IDbIdentityContext.cs" />
     <Compile Include="MVC\Interfaces\IHandleable.cs" />
     <Compile Include="MVC\Interfaces\IInvocable.cs" />
     <Compile Include="MVC\Interfaces\IReanderable.cs" />
@@ -84,6 +88,7 @@
     <Compile Include="ViewModels\UserProfileViewModel.cs" />
     <Compile Include="Views\Home\Index.cs" />
     <Compile Include="Views\Users\All.cs" />
+    <Compile Include="Views\Users\Login.cs" />
     <Compile Include="Views\Users\Profile.cs" />
     <Compile Include="Views\Users\Register.cs" />
   </ItemGroup>
