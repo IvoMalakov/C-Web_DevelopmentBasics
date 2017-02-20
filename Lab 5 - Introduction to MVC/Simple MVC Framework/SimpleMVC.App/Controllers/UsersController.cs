@@ -6,6 +6,7 @@
     using MVC.Interfaces;
     using MVC.Interfaces.Generic;
     using MVC.Attributes.Methods;
+    using MVC.Security;
     using ViewModels;
     using BindingModels;
     using Data;
@@ -15,6 +16,13 @@
 
     public class UsersController : Controller
     {
+        private SignInManager signInManager;
+
+        public UsersController()
+        {
+            signInManager = new SignInManager(new NotesAppContext());
+        }
+
         [HttpGet]
         public IActionResult Register()
         {
@@ -74,21 +82,29 @@
         }
 
         [HttpGet]
-        public IActionResult<AllUserNamesViewModel> All()
+        public IActionResult<AllUserNamesViewModel> All(HttpSession session)
         {
-            List<string> usernames = null;
-
-            using (var context = new NotesAppContext())
+            if (!signInManager.IsAuthenticated(session))
             {
-                usernames = context.Users.Select(u => u.UserName).ToList();
+                return Redirect(new AllUserNamesViewModel(), "users/login");
             }
 
-            var viewModel = new AllUserNamesViewModel()
+            else
             {
-                UserNames = usernames
-            };
+                List<string> usernames = null;
 
-            return View(viewModel);
+                using (var context = new NotesAppContext())
+                {
+                    usernames = context.Users.Select(u => u.UserName).ToList();
+                }
+
+                var viewModel = new AllUserNamesViewModel()
+                {
+                    UserNames = usernames
+                };
+
+                return View(viewModel);
+            }
         }
 
         [HttpGet]

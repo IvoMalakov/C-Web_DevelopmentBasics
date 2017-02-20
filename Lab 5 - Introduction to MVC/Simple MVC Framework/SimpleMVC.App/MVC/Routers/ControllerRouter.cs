@@ -92,11 +92,18 @@
                     .Invoke(this.GetController(), this.methodParams);
 
             string content = actionResult.Invoke();
-            var response = new HttpResponse()
+            var response = new HttpResponse();
+
+            if (!string.IsNullOrEmpty(actionResult.Location))
             {
-                StatusCode = ResponseStatusCode.Ok,
-                ContentAsUTF8 = content
-            };
+                response.StatusCode = ResponseStatusCode.Found;
+                response.Header.OtherParameters.Add("Location", actionResult.Location);
+            }
+            else
+            {
+                response.StatusCode = ResponseStatusCode.Ok;
+                response.ContentAsUTF8 = content;
+            }
 
             return response;
         }

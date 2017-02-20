@@ -76,9 +76,11 @@
     <Compile Include="MVC\Interfaces\IHandleable.cs" />
     <Compile Include="MVC\Interfaces\IInvocable.cs" />
     <Compile Include="MVC\Interfaces\IReanderable.cs" />
+    <Compile Include="MVC\Interfaces\IRedirectable.cs" />
     <Compile Include="MVC\MvcContext.cs" />
     <Compile Include="MVC\MvcEngine.cs" />
     <Compile Include="MVC\Routers\ControllerRouter.cs" />
+    <Compile Include="MVC\Security\SignInManager.cs" />
     <Compile Include="MVC\ViewEngine\ActionResult.cs" />
     <Compile Include="MVC\ViewEngine\Generic\ActionResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

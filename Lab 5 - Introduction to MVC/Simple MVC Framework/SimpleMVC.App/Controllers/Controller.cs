@@ -9,6 +9,38 @@
 
     public class Controller
     {
+        protected IActionResult Redirect(string location, [CallerMemberName] string callee = "")
+        {
+            string controllerName = this.GetType()
+                .Name
+                .Replace(MvcContext.Current.ControllersSuffix, string.Empty);
+
+            string fullQualifiedName = string.Format(
+                "{0}.{1}.{2}.{3}",
+                MvcContext.Current.AssemblyName,
+                MvcContext.Current.ViewsFolder,
+                controllerName,
+                callee);
+
+            return new ActionResult(fullQualifiedName, location);
+        }
+
+        protected IActionResult<T> Redirect<T>(T model, string location, [CallerMemberName] string callee = "")
+        {
+            string controllerName = this.GetType()
+                .Name
+                .Replace(MvcContext.Current.ControllersSuffix, string.Empty);
+
+            string fullQualifiedName = string.Format(
+                "{0}.{1}.{2}.{3}",
+                MvcContext.Current.AssemblyName,
+                MvcContext.Current.ViewsFolder,
+                controllerName,
+                callee);
+
+            return new ActionResult<T>(fullQualifiedName, model, location);
+        }
+
         protected IActionResult View([CallerMemberName] string callee = "")
         {
             string controllerName = this.GetType()
@@ -50,7 +82,7 @@
                 controller,
                 action);
 
-            return new ActionResult(fullQualifedName);
+            return new ActionResult(fullQualifedName, action);
         }
 
         protected IActionResult<T> View<T>(string controller, string action, T model)
