@@ -13,6 +13,7 @@
     using Data.Models;
     using SimpleHttpServer.Models;
     using SimpleHttpServer.Utilities;
+    using SimpleMVC.App.MVC.Controllers;
 
     public class UsersController : Controller
     {
@@ -76,35 +77,58 @@
 
                     context.Logins.Add(login);
                     context.SaveChanges();
+
+                    if (signInManager.IsAuthenticated(session))
+                    {
+                        IList<AllUsersViewModel> list = new List<AllUsersViewModel>();
+                        return Redirect("/home/index");
+                    }
                 }
             }
+
             return View();
         }
 
         [HttpGet]
-        public IActionResult<AllUserNamesViewModel> All(HttpSession session)
+        public IActionResult<GreetViewModel> Greet(HttpSession session)
+        {
+            var viewModel = new GreetViewModel()
+            {
+                SessionId = session.Id
+            };
+
+            return View(viewModel);
+        }
+
+        [HttpGet]
+        public IActionResult<IEnumerable<AllUsersViewModel>> All(HttpSession session)
         {
             if (!signInManager.IsAuthenticated(session))
             {
-                return Redirect(new AllUserNamesViewModel(), "users/login");
+                IList<AllUsersViewModel> list = new List<AllUsersViewModel>();
+                return Redirect(list.AsEnumerable(), "users/login");
             }
 
-            else
+            List<User> users = null;
+
+            using (var context = new NotesAppContext())
             {
-                List<string> usernames = null;
-
-                using (var context = new NotesAppContext())
-                {
-                    usernames = context.Users.Select(u => u.UserName).ToList();
-                }
-
-                var viewModel = new AllUserNamesViewModel()
-                {
-                    UserNames = usernames
-                };
-
-                return View(viewModel);
+                users = context.Users.ToList();
             }
+
+            var viewModel = new List<AllUsersViewModel>();
+
+            foreach (var user in users)
+            {
+                viewModel.Add(new AllUsersViewModel()
+                {
+                    Username = user.UserName,
+                    Id = user.Id
+                    ,
+                });
+            }
+
+            return this.View(viewModel.AsEnumerable());
         }
 
         [HttpGet]
@@ -148,6 +172,18 @@
             }
 
             return Profile(model.UserId);
+        }
+
+        [HttpGet]
+        public IActionResult Logout(HttpSession session)
+        {
+            if (signInManager.IsAuthenticated(session))
+            {
+                signInManager.Logout(session);
+                return Redirect("/home/index");
+            }
+
+            return View();
         }
     }
 }

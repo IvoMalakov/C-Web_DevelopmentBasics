@@ -25,5 +25,12 @@
 
             return false;
         }
+
+        public void Logout(HttpSession session)
+        {
+            var login = this.dbcContext.Logins.FirstOrDefault(l => l.SessionId == session.Id);
+            this.dbcContext.Logins.Remove(login);
+            this.dbcContext.Save();
+        }
     }
 }

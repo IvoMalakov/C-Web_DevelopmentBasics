@@ -1,12 +1,12 @@
 ﻿namespace SimpleMVC.App.Views.Users
 {
+    using System.Collections.Generic;
     using System.Text;
     using MVC.Interfaces.Generic;
     using ViewModels;
 
-    public class All : IRenderable<AllUserNamesViewModel>
+    public class All : IRenderable<IEnumerable<AllUsersViewModel>>
     {
-        public AllUserNamesViewModel Model { get; set; }
 
         public string Render()
         {
@@ -17,14 +17,16 @@
             sb.AppendLine("<ul>");
             int idCount = 1;
 
-            foreach (var userName in Model.UserNames)
+            foreach (var userName in ((IRenderable<IEnumerable<AllUsersViewModel>>)this).Model)
             {
-                sb.AppendLine($"<li><a href=\"profile?id={idCount}\">{userName}</a></li>");
+                sb.AppendLine($"<li><a href=\"profile?id={idCount}\">{userName.Username}</a></li>");
                 idCount++;
             }
             sb.AppendLine("</ul>");
 
             return sb.ToString();
         }
+
+        IEnumerable<AllUsersViewModel> IRenderable<IEnumerable<AllUsersViewModel>>.Model { get; set; }
     }
 }

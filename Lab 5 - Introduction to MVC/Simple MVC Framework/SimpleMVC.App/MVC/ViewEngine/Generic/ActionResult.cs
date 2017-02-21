@@ -5,19 +5,18 @@
 
     public class ActionResult<T> : IActionResult<T>
     {
-        public ActionResult(string viewFullQualifiedName, T model) : this(viewFullQualifiedName, model, string.Empty)
+        public ActionResult(string viewFullQualifiedName, T model, string location) : this(viewFullQualifiedName, model)
         {
-            
+            this.Location = location;
         }
 
-        public ActionResult(string viewFullQualifiedName, T model, string location)
+        public ActionResult(string viewFullQualifiedName, T model)
         {
             this.Action =
                 (IRenderable<T>) Activator
                     .CreateInstance(Type.GetType(viewFullQualifiedName));
 
             this.Action.Model = model;
-            this.Location = location;
         }
 
         public IRenderable<T> Action { get; set; }

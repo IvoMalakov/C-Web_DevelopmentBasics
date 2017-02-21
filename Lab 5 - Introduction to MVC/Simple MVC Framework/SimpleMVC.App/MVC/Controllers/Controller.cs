@@ -1,4 +1,4 @@
-﻿namespace SimpleMVC.App.Controllers
+﻿namespace SimpleMVC.App.MVC.Controllers
 {
     using System.Runtime.CompilerServices;
     using MVC;
