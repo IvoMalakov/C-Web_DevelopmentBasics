@@ -1,0 +1,16 @@
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 5 - PizzaMore with MVC Framework\PizzaMoreMVC\PizzaMore\bin\Debug\PizzaMore.exe.config
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 5 - PizzaMore with MVC Framework\PizzaMoreMVC\PizzaMore\bin\Debug\Resources\Pages\404.html
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 5 - PizzaMore with MVC Framework\PizzaMoreMVC\PizzaMore\bin\Debug\Resources\Pages\500.html
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 5 - PizzaMore with MVC Framework\PizzaMoreMVC\PizzaMore\bin\Debug\PizzaMore.exe
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 5 - PizzaMore with MVC Framework\PizzaMoreMVC\PizzaMore\bin\Debug\PizzaMore.pdb
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 5 - PizzaMore with MVC Framework\PizzaMoreMVC\PizzaMore\bin\Debug\SimpleHttpServer.dll
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 5 - PizzaMore with MVC Framework\PizzaMoreMVC\PizzaMore\bin\Debug\SimpleMVC.dll
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 5 - PizzaMore with MVC Framework\PizzaMoreMVC\PizzaMore\bin\Debug\SimpleHttpServer.pdb
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 5 - PizzaMore with MVC Framework\PizzaMoreMVC\PizzaMore\bin\Debug\SimpleMVC.pdb
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 5 - PizzaMore with MVC Framework\PizzaMoreMVC\PizzaMore\obj\Debug\PizzaMore.csprojResolveAssemblyReference.cache
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 5 - PizzaMore with MVC Framework\PizzaMoreMVC\PizzaMore\obj\Debug\PizzaMore.exe
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 5 - PizzaMore with MVC Framework\PizzaMoreMVC\PizzaMore\obj\Debug\PizzaMore.pdb
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 5 - PizzaMore with MVC Framework\PizzaMoreMVC\PizzaMore\bin\Debug\EntityFramework.dll
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 5 - PizzaMore with MVC Framework\PizzaMoreMVC\PizzaMore\bin\Debug\EntityFramework.SqlServer.dll
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 5 - PizzaMore with MVC Framework\PizzaMoreMVC\PizzaMore\bin\Debug\EntityFramework.xml
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 5 - PizzaMore with MVC Framework\PizzaMoreMVC\PizzaMore\bin\Debug\EntityFramework.SqlServer.xml
