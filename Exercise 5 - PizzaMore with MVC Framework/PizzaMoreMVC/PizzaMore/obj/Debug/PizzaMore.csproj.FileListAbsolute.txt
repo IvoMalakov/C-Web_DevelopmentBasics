@@ -14,3 +14,5 @@ D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 5 - Pi
 D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 5 - PizzaMore with MVC Framework\PizzaMoreMVC\PizzaMore\bin\Debug\EntityFramework.SqlServer.dll
 D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 5 - PizzaMore with MVC Framework\PizzaMoreMVC\PizzaMore\bin\Debug\EntityFramework.xml
 D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 5 - PizzaMore with MVC Framework\PizzaMoreMVC\PizzaMore\bin\Debug\EntityFramework.SqlServer.xml
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 5 - PizzaMore with MVC Framework\PizzaMoreMVC\PizzaMore\bin\Debug\AutoMapper.dll
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 5 - PizzaMore with MVC Framework\PizzaMoreMVC\PizzaMore\bin\Debug\AutoMapper.xml

@@ -170,12 +170,18 @@ namespace SimpleHttpServer
             // trigger the route handler...
             try
             {
-                var response = route.Callable(Request);
-                if (!Request.Header.Cookies.Contains("sessionId") || Request.Session == null)
+                 HttpResponse response;
+                if (!Request.Header.Cookies.Contains("sessionId") || this.Request.Session == null)
                 {
                     var session = SessionCreator.Create();
                     var sessionCookie = new Cookie("sessionId", session.Id + "; HttpOnly; path=/");
+                    this.Request.Session = session;
+                    response = route.Callable(this.Request);
                     response.Header.AddCookie(sessionCookie);
+                }
+                else
+                {
+                    response = route.Callable(this.Request);
                 }
 
                 return response;

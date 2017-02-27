@@ -1,6 +1,9 @@
 ﻿namespace PizzaMore.Models
 {
+    using System.Text;
     using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+    using System.Collections.Generic;
 
     public class Pizza
     {
@@ -19,6 +22,18 @@
 
         public int OwnerId { get; set; }
 
+        [ForeignKey("OwnerId")]
         public virtual User Owner { get; set; }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine("<form method=\"POST\" action=\"/menu/suggestions\">");
+            sb.AppendLine($"<li><a href=\"/menu/details?pizzaid={this.Id}\">{this.Title}</a> <input type=\"hidden\" name=\"Pizzaid\" value=\"{this.Id}\"/> <input type=\"submit\" class=\"btn btn-sm btn-danger\" value=\"X\"/></li>");
+
+            sb.AppendLine("</form>");
+            return sb.ToString();
+        }
     }
 }
