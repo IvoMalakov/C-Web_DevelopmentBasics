@@ -76,6 +76,35 @@
             this.Context.SaveChanges();
         }
 
+        public PizzaDetailsViewModel ShowPizzaDetails(int id, HttpSession session)
+        {
+            ConfigureMapper(session);
+            Pizza pizza = this.Context.Pizzas.Find(id);
+            PizzaDetailsViewModel pizzaDetailsViewModel = Mapper.Map<PizzaDetailsViewModel>(pizza);
+            return pizzaDetailsViewModel;
+        }
+
+        public PizzaSuggestionViewModel DisplayUserSuggestedPizzas(HttpSession session)
+        {
+            User user = this.Context.Sessions.FirstOrDefault(s => s.Id == session.Id).User;
+
+            PizzaSuggestionViewModel pizzaSuggestionView = new PizzaSuggestionViewModel()
+            {
+                Email = user.Email,
+                PizzaSuggestions = user.Suggestions
+            };
+
+            return pizzaSuggestionView;
+        }
+
+        public void RemovePizza(int pizzaId)
+        {
+            Pizza pizzaForRemove = this.Context.Pizzas.Find(pizzaId);
+
+            this.Context.Pizzas.Remove(pizzaForRemove);
+            this.Context.SaveChanges();
+        }
+
         private void ConfigureMapper(HttpSession session)
         {
             Mapper.Initialize(expression => expression.CreateMap<PizzaBindingModel, Pizza>()
@@ -83,6 +112,8 @@
                     .MapFrom(m => m.url))
                 .ForMember(p => p.Owner, config => config
                     .MapFrom(u => this.Context.Sessions.FirstOrDefault(s => s.Id == session.Id).User)));
+
+            Mapper.Initialize(expression => expression.CreateMap<Pizza, PizzaDetailsViewModel>());
         }
 
         private IEnumerable<Pizza> GetSortedPizzas(List<Pizza> pizzas, string sortedMethod)

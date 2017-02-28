@@ -59,7 +59,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BindingModels\PizzaBindingModel.cs" />
+    <Compile Include="BindingModels\PizzaDeleteBindingModel.cs" />
     <Compile Include="BindingModels\PizzaVoteBindingModel.cs" />
+    <Compile Include="BindingModels\SortingBindingModel.cs" />
     <Compile Include="BindingModels\UserBindingModel.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MenuController.cs" />
@@ -82,12 +84,16 @@
     <Compile Include="Utilities\Constants.cs" />
     <Compile Include="Utilities\PasswordHasher.cs" />
     <Compile Include="Utilities\WebUtils.cs" />
+    <Compile Include="ViewModels\PizzaDetailsViewModel.cs" />
     <Compile Include="ViewModels\PizzaSuggestionViewModel.cs" />
     <Compile Include="ViewModels\PizzaViewModel.cs" />
     <Compile Include="Views\Home\Index.cs" />
     <Compile Include="Views\Home\IndexLogged.cs" />
     <Compile Include="Views\Menu\Add.cs" />
+    <Compile Include="Views\Menu\Details.cs" />
     <Compile Include="Views\Menu\Index.cs" />
+    <Compile Include="Views\Menu\Sorted.cs" />
+    <Compile Include="Views\Menu\Suggestions.cs" />
     <Compile Include="Views\Users\Signin.cs" />
     <Compile Include="Views\Users\Signup.cs" />
   </ItemGroup>
