@@ -9,6 +9,10 @@ namespace ShouterApp.Data.Contracts
 
         IDbSet<Login> Logins { get; }
 
+        IDbSet<Notification> Notifications { get; }
+
+        IDbSet<Shaout> Shaouts { get; }
+
         DbContext DbContext { get; }
 
         int SaveChanges();

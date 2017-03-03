@@ -22,6 +22,10 @@ namespace ShouterApp.Data
 
         public LoginRepository LoginRepository => new LoginRepository(this.context);
 
+        public NotificationRepository NotificationRepository => new NotificationRepository(this.context);
+
+        public ShaoutRepository ShaoutRepository => new ShaoutRepository(this.context);
+
         public IShouterContext Context => this.context;
 
         public int SaveChanges() => this.context.SaveChanges();

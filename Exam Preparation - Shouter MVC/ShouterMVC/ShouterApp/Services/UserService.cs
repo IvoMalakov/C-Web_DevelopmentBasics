@@ -45,6 +45,12 @@ namespace ShouterApp.Services
             return user;
         }
 
+        public Login LogoutUser(HttpResponse response, HttpSession session)
+        {
+            Login login = this.context.Logins.FirstOrDefault(l => l.IsActive && l.SessionId == session.Id);
+            return login;
+        }
+
         private void ConfigureMapper()
         {
             Mapper.Initialize(expression => expression.CreateMap<RegisterUserBindingModel, User>());

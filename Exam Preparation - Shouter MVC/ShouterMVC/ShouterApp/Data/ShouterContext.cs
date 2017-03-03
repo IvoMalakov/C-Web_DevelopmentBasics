@@ -17,6 +17,11 @@ namespace ShouterApp.Data
         public IDbSet<User> Users { get; set; }
 
         public IDbSet<Login> Logins { get; set; }
+
+        public IDbSet<Notification> Notifications { get; set; }
+
+        public IDbSet<Shaout> Shaouts { get; set; }
+
         public DbContext DbContext => this;
         public new IDbSet<T> Set<T>() where T : class
         {

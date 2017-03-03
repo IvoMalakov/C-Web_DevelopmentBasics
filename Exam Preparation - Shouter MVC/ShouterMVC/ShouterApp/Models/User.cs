@@ -1,14 +1,23 @@
-﻿namespace ShouterApp.Models
+﻿using System.Collections.Generic;
+
+namespace ShouterApp.Models
 {
     using System;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
-    public partial class User
+    public  partial class User
     {
         private string username;
         private string email;
         private string password;
         private DateTime birthdate;
+
+        public User()
+        {
+            this.Following = new HashSet<User>();
+            this.Notifications = new HashSet<Notification>();
+            this.Shaouts = new HashSet<Shaout>();
+        }
 
         [Key]
         public int Id { get; set; }
@@ -99,5 +108,11 @@
                 this.birthdate = value;
             }
         }
+
+        public virtual ICollection<User> Following { get; set; }
+
+        public virtual ICollection<Notification> Notifications { get; set; } 
+
+        public virtual ICollection<Shaout> Shaouts { get; set; }
     }
 }
