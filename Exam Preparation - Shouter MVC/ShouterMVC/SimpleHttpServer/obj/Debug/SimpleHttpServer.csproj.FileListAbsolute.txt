@@ -13,3 +13,4 @@ D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 6 - Sh
 D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 6 - Shouter System\ShouterMVC\SimpleHttpServer\bin\Debug\SimpleHttpServer.pdb
 D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 6 - Shouter System\ShouterMVC\SimpleHttpServer\obj\Debug\SimpleHttpServer.dll
 D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 6 - Shouter System\ShouterMVC\SimpleHttpServer\obj\Debug\SimpleHttpServer.pdb
+D:\Ivo\kurs po programirane\nivo 5 - C# Web\Development Basics\Upragnenie 6 - Shouter System\ShouterMVC\SimpleHttpServer\obj\Debug\SimpleHttpServer.csprojResolveAssemblyReference.cache

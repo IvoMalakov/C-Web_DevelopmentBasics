@@ -4,6 +4,8 @@ using ShouterApp.Data;
 using ShouterApp.Data.Contracts;
 using AutoMapper;
 using ShouterApp.Models;
+using SimpleHttpServer.Models;
+using SimpleHttpServer.Utilities;
 
 namespace ShouterApp.Services
 {
@@ -25,7 +27,7 @@ namespace ShouterApp.Services
         public void RegisterUser(RegisterUserBindingModel model)
         {
             if (model.Password == model.ConfirmPassword &&
-                this.context.Users.FirstOrDefault(u => u.Username == model.Username) != null)
+                this.context.Users.FirstOrDefault(u => u.Username == model.Username) == null)
             {
                 ConfigureMapper();
                 User user = Mapper.Map<User>(model);
@@ -33,6 +35,14 @@ namespace ShouterApp.Services
                 this.context.Users.Add(user);
                 this.context.SaveChanges();
             }
+        }
+
+        public User LoginUser(LoginUserBindingModel model, HttpResponse response, HttpSession session)
+        {
+            User user =
+                this.context.Users.FirstOrDefault(u => u.Username == model.Username && u.Password == model.Password);
+
+            return user;
         }
 
         private void ConfigureMapper()

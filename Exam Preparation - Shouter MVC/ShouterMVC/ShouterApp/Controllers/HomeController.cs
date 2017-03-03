@@ -1,6 +1,7 @@
 ﻿using ShouterApp.BindingModels;
 using ShouterApp.Data;
 using ShouterApp.Data.Contracts;
+using ShouterApp.Models;
 using ShouterApp.Services;
 using SimpleHttpServer.Models;
 using SimpleMVC.Attributes.Methods;
@@ -41,6 +42,26 @@ namespace ShouterApp.Controllers
         {
             new UserService(this.context).RegisterUser(model);
             return View("Home", "Feed");
+        }
+
+        [HttpGet]
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Login(LoginUserBindingModel model, HttpResponse response, HttpSession session)
+        {
+            User user = new UserService(this.context).LoginUser(model, response, session);
+
+            if (user != null)
+            {
+                new SessionService(this.context).AddUserSession(user, session);
+                return View("Home", "FeedSigned");
+            }
+
+            return View();
         }
     }
 }
